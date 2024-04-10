@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewFav"
+            android:layout_width="96dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_nav_logo"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Movie Title"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <TextView
+            android:id="@+id/detailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Year | Runtime | Language"
+            android:textAppearance="?android:textAppearanceSmall" />
+        <TextView
+            android:id="@+id/actorsTextView"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_height="wrap_content"
+            android:text="Actors: "
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Remove"
+            android:backgroundTint="#FF004D" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

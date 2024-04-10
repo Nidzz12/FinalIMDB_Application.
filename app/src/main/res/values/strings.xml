@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IMDB_Application</string>
+    <string name="dimensions">Dimensions: %1$d x %2$d</string>
+
+</resources>

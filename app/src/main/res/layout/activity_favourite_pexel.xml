@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Heading TextView -->
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Favorites Page"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Hint TextView for delete option -->
+    <TextView
+        android:id="@+id/textViewHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHeading"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Tap on an image to delete it"
+        android:textColor="#333"
+        android:textSize="14sp" />
+
+    <!-- RecyclerView for favorite photos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pexelRecyler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewHint"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>
